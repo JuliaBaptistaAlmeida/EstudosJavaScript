@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        body {
+            background-color: rgb(161, 76, 240);
+        }
+        div#area {
+            font: normal 20pt Arial;
+            background: rgb(236, 93, 169);
+            color: aliceblue;
+            width: 200px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id = "area" onclick="clicar()">
+        Clique aqui!
+    </div>
+
+    <script>
+        function clicar(){
+            var a = window.document.getElementById('area') // faz ligação de objeto a de JavaScript com elemento area dentro de html
+            a.innerText = 'Clicou!'
+        }
+    </script>
+</body>
+</html>

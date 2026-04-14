@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            color:rgb(241, 32, 161);
+            font:normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é seu nome?')
+        document.write(`Olá, <Strong>${nome}</Strong>! Seu nome tem ${nome.length} letras.<br/>`) //write faz escrever na tela e não no aviso
+        document.write(`Seu nome em maiúsculo é ${nome.toUpperCase()}.<br/>`)
+        document.write(`Seu nome em minúsculo é ${nome.toLowerCase()}.<br/>`)
+    </script>
+</body>
+</html>

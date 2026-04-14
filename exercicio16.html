@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body {
+            background-color: rgb(126, 247, 90);
+            color: rgb(0, 74, 56);
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificando Maioridade</h1>
+
+    Idade: <input type="number" name="nidade" id="nidade">
+    <input type="button" value="Verificar" onclick="verificar()">
+
+    <div id="res"></div>
+
+    <script>
+        function verificar(){
+            var idade = document.getElementById('nidade').value
+            var res = document.getElementById('res')
+
+            if (idade < 18){
+                res.innerText = 'Menor de idade!'
+            } else {
+                res.innerText = 'Maior de idade!'
+            }
+        }
+    </script>
+</body>
+</html>

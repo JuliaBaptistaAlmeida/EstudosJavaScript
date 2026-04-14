@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições</title>
+    <style>
+        body {
+            background-color: rgb(90, 163, 247);
+            color: rgb(0, 74, 56);
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificando obrigatoriedade do voto...</h1>
+
+    Idade: <input type="number" name="nidade" id="nidade">
+    <input type="button" value="Verificar" onclick="verificar()">
+
+    <div id="res"></div>
+
+    <script>
+        function verificar(){
+            var idade = document.getElementById('nidade').value
+            var res = document.getElementById('res')
+
+            if (idade < 16){
+                res.innerText = 'Não Vota'
+            } else if (idade < 18 || idade >= 65){
+                res.innerText = 'Voto opcional'
+            } else {
+                res.innerText = 'Voto obrigatório'
+            }
+        }
+    </script> 
+</body>
+</html>

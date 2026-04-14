@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Switch-Case</title>
+</head>
+
+<body>
+
+<h1>Aprendendo switch case</h1>
+
+<div id="dia"></div>
+
+<script>
+var agora = new Date()
+var diasem = agora.getDay()
+var dia = document.getElementById('dia')
+
+switch(diasem){
+    case 0:
+        dia.innerText = 'Hoje é Domingo'
+        break
+    case 1:
+        dia.innerText = 'Hoje é Segunda'
+        break
+    case 2:
+        dia.innerText = 'Hoje é Terça'
+        break
+    case 3:
+        dia.innerText = 'Hoje é Quarta'
+        break
+    case 4:
+        dia.innerText = 'Hoje é Quinta'
+        break
+    case 5:
+        dia.innerText = 'Hoje é Sexta'
+        break
+    case 6:
+        dia.innerText = 'Hoje é Sábado'
+        break
+}
+</script>
+
+</body>
+</html>
